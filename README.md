@@ -9,9 +9,9 @@ This is a Typing Speed Calculator built in Python that allows users to measure t
 🛠 Simple interface (uses Tkinter if GUI is implemented)
 
 🔧 Technologies Used
-Python 🐍
-Tkinter (for GUI, if applicable)
-Time module
+ Python 🐍 
+ Tkinter (for GUI, if applicable)
+ Time module
 
 📜 License
 This project is open-source and available under the MIT License.
