@@ -24,4 +24,4 @@ This is a Typing Speed Calculator built in Python that allows users to measure t
 
 📜 License
 
-This project is open-source and available under the MIT License.
+This project is open-source.
