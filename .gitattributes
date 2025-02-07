@@ -1,2 +1,51 @@
 # Auto detect text files and perform LF normalization 
 * text=auto 
+
+# Ensure Python files use LF line endings for cross-platform compatibility
+*.py text eol=lf
+
+# Treat Markdown files as text with LF line endings
+*.md text eol=lf
+
+# Handle JSON and YAML files consistently
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Ignore Python cache and compiled files
+*.pyc binary
+*.pyo binary
+__pycache__/ binary
+
+# Treat images as binary files to prevent corruption
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+
+# Handle text files properly with UTF-8 encoding
+*.txt text encoding=UTF-8
+
+# If you're using a GUI with Tkinter and have font files
+*.ttf binary
+*.otf binary
+
+
+
+🔹 Why This is Useful for Your Project
+✅ Python Files (*.py) → Ensures consistent line endings (LF), preventing issues when collaborating across Windows, macOS, and Linux.
+✅ Markdown Files (README.md) → Forces LF line endings for documentation consistency.
+✅ JSON/YAML (*.json, *.yml) → Maintains proper formatting in configuration files.
+✅ Binary Files (*.png, *.jpg, *.pyc) → Prevents Git from modifying images or compiled Python files.
+✅ Text Files (*.txt) → Uses UTF-8 encoding to avoid character corruption in text-based outputs.
+✅ Font Files (*.ttf, *.otf) → If your project has a custom GUI, this ensures font files remain intact.
+
+✅ Final Steps: Add & Commit the .gitattributes File
+Once you've created the .gitattributes file, add and push it to GitHub:
+
+sh
+Copy
+Edit
+git add .gitattributes
+git commit -m "Added .gitattributes for proper file handling"
+git push origin main 
