@@ -32,20 +32,18 @@ __pycache__/ binary
 
 
 
-🔹 Why This is Useful for Your Project
-✅ Python Files (*.py) → Ensures consistent line endings (LF), preventing issues when collaborating across Windows, macOS, and Linux.
-✅ Markdown Files (README.md) → Forces LF line endings for documentation consistency.
-✅ JSON/YAML (*.json, *.yml) → Maintains proper formatting in configuration files.
-✅ Binary Files (*.png, *.jpg, *.pyc) → Prevents Git from modifying images or compiled Python files.
-✅ Text Files (*.txt) → Uses UTF-8 encoding to avoid character corruption in text-based outputs.
-✅ Font Files (*.ttf, *.otf) → If your project has a custom GUI, this ensures font files remain intact.
+### **Why This is Useful for Your Project**
+✅ **Python Files (`*.py`)** → Ensures consistent line endings (`LF`), preventing issues when collaborating across Windows, macOS, and Linux.  
+✅ **Markdown Files (`README.md`)** → Forces LF line endings for documentation consistency.  
+✅ **JSON/YAML (`*.json`, `*.yml`)** → Maintains proper formatting in configuration files.  
+✅ **Binary Files (`*.png`, `*.jpg`, `*.pyc`)** → Prevents Git from modifying images or compiled Python files.  
+✅ **Text Files (`*.txt`)** → Uses UTF-8 encoding to avoid character corruption in text-based outputs.  
+✅ **Font Files (`*.ttf`, `*.otf`)** → If your project has a custom GUI, this ensures font files remain intact.  
 
-✅ Final Steps: Add & Commit the .gitattributes File
-Once you've created the .gitattributes file, add and push it to GitHub:
+### **✅ Final Steps: Add & Commit the `.gitattributes` File**
+Once you've created the `.gitattributes` file, add and push it to GitHub:
 
-sh
-Copy
-Edit
+```sh
 git add .gitattributes
 git commit -m "Added .gitattributes for proper file handling"
 git push origin main 
